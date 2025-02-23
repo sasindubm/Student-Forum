@@ -10,15 +10,15 @@
     <!-- Header section with logo and title -->
     <header>
         <div style="display: flex; justify-content: center; align-items: center;">
-            <img src="img/images.png" height="95" width="100" style="border-radius: 50%;">&nbsp;&nbsp;&nbsp;
+            <img src="img/cot-logo.png" height="95" width="100" style="border-radius: 50%;">&nbsp;&nbsp;&nbsp;
             <h1>ICT Diploma NVQ5<br>Student Forum</h1>
         </div>
         <!-- Dropdown menu for navigation -->
         <div class="dropdown">
-            <button type="button" class="dropdown-button"><img src="img/app-drawer_11488464.png" height="24" width="24"></button>
+            <button type="button" class="dropdown-button"><img src="img/app-drawer.png" height="24" width="24"></button>
             <div class="dropdown-menu">
-                    <a href="index.html">Semester 1</a>
-                    <a href="search.html">Semester 2</a>
+                    <a href="index.html">Syllabus</a>
+                    <a href="search.html">Past Papers</a>
                     <a href="search.html">Assesments</a>
             </div>
         </div>
@@ -40,21 +40,98 @@
                     menu.classList.remove('show');
                 }
             });
+
+            window.addEventListener('DOMContentLoaded', (event => {
+                const headerHeight = document.querySelector('header').offsetHeight;
+                const searchArea = document.querySelector('#searcharea');
+
+                searchArea.style.top = headerHeight + 'px';
+                searchArea.style.position = 'sticky';
+            }));
+
         </script>
     </header>
-    <!-- Search area -->
-    <div class="sercharea">
-        <br>
-        <form action="search.php" method="post">
-            <label for="searchbar"> Search : </label>
-            <input type="search" id="searchbar" name="query" placeholder="Search content...">
-            <button type="submit" id="btnsearch">&#128269;</button>
-        </form>
-    </div>
+    <main>
+        <!-- Search area -->
+        <section id="searcharea">
+            <br>
+            <form action="search.php" method="post">
+                <label for="searchbar"> Search : </label>
+                <input type="search" id="searchbar" name="query" placeholder="Search content...">
+                <button type="submit" id="btnsearch">&#128269;</button>
+            </form>
+        </section>
+        <!--content area-->
+        <section id="content">
+            <div class="card-container">
+                <section id="sem1"><h2>Semester I</h2>
+                    <div class="card">
+                        <img src="img/"><br>
+                        DBMS-I<br>(Database Management Systems)
+                    </div>
+                    <div class="card">
+                        <img src="img/"><br>
+                        SAD<br>(System Analysis and Design)
+                    </div>
+                    <div class="card">
+                        <img src="img/"><br>
+                        Graphic Design<br>(Theory)
+                    </div>
+                    <div class="card">
+                        <img src="img/"><br>
+                        Graphic Design<br>(Practicle)
+                    </div>
+                    <div class="card">
+                        <img src="img/"><br>
+                        Software Programming<br>(Theory)
+                    </div>
+                    <div class="card">
+                        <img src="img/"><br>
+                        Software Programming<br>(Practicle)
+                    </div>
+                    <div class="card">
+                        <img src="img/"><br>
+                        EMP-I<br>()
+                    </div>
+                </section>
+                <br><hr><br>
+                <section id="sem2"><h2>Semester II</h2>
+                    <div class="card">
+                        <img src="img/"><br>
+                        DBMS-I<br>(Database Management Systems)
+                    </div>
+                    <div class="card">
+                        <img src="img/"><br>
+                        DBMS-I<br>(Database Management Systems)
+                    </div>
+                    <div class="card">
+                        <img src="img/"><br>
+                        DBMS-I<br>(Database Management Systems)
+                    </div>
+                    <div class="card">
+                        <img src="img/"><br>
+                        DBMS-I<br>(Database Management Systems)
+                    </div>
+                    <div class="card">
+                        <img src="img/"><br>
+                        DBMS-I<br>(Database Management Systems)
+                    </div>
+                    <div class="card">
+                        <img src="img/"><br>
+                        DBMS-I<br>(Database Management Systems)
+                    </div>
+                    <div class="card">
+                        <img src="img/"><br>
+                        DBMS-I<br>(Database Management Systems)
+                    </div>
+                </section>
+            </div>
+        </section>
     <!-- Footer section -->
+    </main>
     <footer>
         <p>Copyright &copy; 2025 - Student Forum&trade;</p>
-        <p>Developed by <a href="https://github.com/sasindubm" target="_blank"><img src="img/github-6980894_640.webp" height="18" width="18" style="border-radius: 50%;"> sasindubm &raquo;</a></p>
+        <p>Developed by <a href="https://github.com/sasindubm" target="_blank"><img src="img/github-icon.webp" height="18" width="18" style="border-radius: 50%;"> sasindubm &raquo;</a></p>
     </footer>
     </body>
 </html>
