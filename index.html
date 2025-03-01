@@ -4,7 +4,7 @@
         <title>Search</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style/style.css">
     </head>
     <body>
     <!-- Header section with logo and title -->
@@ -17,8 +17,8 @@
         <div class="dropdown">
             <button type="button" class="dropdown-button"><img src="img/app-drawer.png" height="24" width="24"></button>
             <div class="dropdown-menu">
-                    <a href="index.html">Syllabus</a>
-                    <a href="search.html">Past Papers</a>
+                    <a href="htdocs/syllabus.html">Syllabus</a>
+                    <a href="htdocs/pastpapers.html">Past Papers</a>
                     <a href="search.html">Assesments</a>
             </div>
         </div>
@@ -42,6 +42,7 @@
             });
 
             window.addEventListener('DOMContentLoaded', (event => {
+                searchArea.style.zIndex = '9998';
                 const headerHeight = document.querySelector('header').offsetHeight;
                 const searchArea = document.querySelector('#searcharea');
 
@@ -65,64 +66,106 @@
         <section id="content">
             <div class="card-container">
                 <section id="sem1"><h2>Semester I</h2>
-                    <div class="card">
+                    <div class="card" id="dbmsI">
                         <img src="img/db.png"><br>
                         DBMS-I<br>(Database Management Systems)
+                        <script>document.querySelector('#dbmsI').addEventListener('click',function(){
+                            window.location.href = 'p1.html';
+                        });</script>
                     </div>
-                    <div class="card">
+                    <div class="card" id="sad">
                         <img src="img/sad.png"><br>
                         SAD<br>(System Analysis and Design)
+                        <script>document.querySelector('#sad').addEventListener('click',function(){
+                            window.location.href = 'p2.html';
+                        });</script>
                     </div>
-                    <div class="card">
+                    <div class="card" id="gt">
                         <img src="img/graphic.png"><br>
                         Graphic Design<br>(Theory)
+                        <script>document.querySelector('#gt').addEventListener('click',function(){
+                            window.location.href = 'p3.html';
+                        });</script>
                     </div>
-                    <div class="card">
+                    <div class="card" id="gp">
                         <img src="img/graphic.png"><br>
                         Graphic Design<br>(Practicle)
+                        <script>document.querySelector('#gp').addEventListener('click',function(){
+                            window.location.href = 'p4.html';
+                        });</script>
                     </div>
-                    <div class="card">
+                    <div class="card" id="spt">
                         <img src="img/sp.png"><br>
                         Software Programming<br>(Theory)
+                        <script>document.querySelector('#spt').addEventListener('click',function(){
+                            window.location.href = 'p5.html';
+                        });</script>
                     </div>
-                    <div class="card">
+                    <div class="card" id="spp">
                         <img src="img/sp.png"><br>
                         Software Programming<br>(Practicle)
+                        <script>document.querySelector('#spp').addEventListener('click',function(){
+                            window.location.href = 'p6.html';
+                        });</script>
                     </div>
-                    <div class="card">
+                    <div class="card" id="empi">
                         <img src="img/emp.png"><br>
-                        EMP-I<br>()
+                        EMP-I<br>(Planning and Scheduling Work at Place)
+                        <script>document.querySelector('#empi').addEventListener('click',function(){
+                            window.location.href = 'p7.html';
+                        });</script>
                     </div>
                 </section>
                 <br><hr><br>
                 <section id="sem2"><h2>Semester II</h2>
-                    <div class="card">
+                    <div class="card" id="dbmsII">
                         <img src="img/db.png"><br>
                         DBMS-II<br>(Database Management Systems)
+                        <script>document.querySelector('#dbmsII').addEventListener('click',function(){
+                            window.location.href = 'p8.html';
+                        });</script>
                     </div>
-                    <div class="card">
+                    <div class="card" id="st">
                         <img src="img/sad.png"><br>
                         Software Testing
+                        <script>document.querySelector('#st').addEventListener('click',function(){
+                            window.location.href = 'p9.html';
+                        });</script>
                     </div>
-                    <div class="card">
+                    <div class="card" id="lant">
                         <img src="img/network.png"><br>
                         Local Area Network<br>(Theory)
+                        <script>document.querySelector('#lant').addEventListener('click',function(){
+                            window.location.href = 'p10.html';
+                        });</script>
                     </div>
-                    <div class="card">
+                    <div class="card" id="lanp">
                         <img src="img/network.png"><br>
                         Local Area Network<br>(Practicle)
+                        <script>document.querySelector('#lanp').addEventListener('click',function(){
+                            window.location.href = 'p11.html';
+                        });</script>
                     </div>
-                    <div class="card">
+                    <div class="card" id="webt">
                         <img src="img/web.png"><br>
                         Web Programming<br>(Theory)
+                        <script>document.querySelector('#webt').addEventListener('click',function(){
+                            window.location.href = 'p12.html';
+                        });</script>
                     </div>
-                    <div class="card">
+                    <div class="card" id="webp">
                         <img src="img/web.png"><br>
                         Web Programming<br>(Practicle)
+                        <script>document.querySelector('#webp').addEventListener('click',function(){
+                            window.location.href = 'p13.html';
+                        });</script>
                     </div>
-                    <div class="card">
+                    <div class="card" id="empii">
                         <img src="img/emp.png"><br>
-                        EMP-II<br>()
+                        EMP-II<br>(Planning and Scheduling Work at Place)
+                        <script>document.querySelector('#empii').addEventListener('click',function(){
+                            window.location.href = 'p14.html';
+                        });</script>
                     </div>
                 </section>
             </div>
