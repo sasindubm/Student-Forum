@@ -1,13 +1,26 @@
+:root {
+    --background-color: var(azure);
+    --color: var(black);
+    --box-shadow: var(0px 8px 16px 0px rgba(0, 0, 0, 0.2));
+    --border: var(none);
+}
+
+html {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
 /* General body styling */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
     background-image: url('/img/bg.png');
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    height: 100;
-    width: 100;
+    height: 100%;
+    width: 100%;
+    color: var(--color);
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -21,38 +34,13 @@ header {
     top: 0;
     text-align: center;
     background-color: rgb(205, 234, 255);
-    color: black;
+    color: var(--color);
     width: 100%;
+    height: fit-content;
     border-radius: 20px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    flex-shrink: 0;
+    box-shadow: var(--box-shadow);
     padding: 10px;
-}
-
-@media (max-width: 768px) {
-    header {
-        padding: 5px;
-        flex-wrap: wrap;
-    }
-
-    header h1 {
-        font-size: 20px;
-    }
-
-    header img {
-        height: 50px;
-        width: 50px;
-    }
-
-    .dropdown-button {
-        scale: 0.5;
-        position: relative;
-    }
-
-    .dropdown-menu {
-        scale: 0.6;
-        position: relative;
-    }
+    margin-bottom: 10px;
 }
 
 main {
@@ -64,10 +52,12 @@ main {
 footer {
     font-size: 18px;
     background-color: rgb(205, 234, 255);
-    width: calc(100%);
-    border-radius: 20px;
-    flex-shrink: 0;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
     bottom: 0;
+    position: sticky;
+    margin-top: 10px;
 }
 
 /* Link styling */
@@ -75,24 +65,25 @@ a:link {
     color: #2f3bd8;
     text-decoration: dashed;
 }
+
 a:visited {
     color: black;
     font-style: italic;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
 a:active {
     text-decoration: none;
 }
 
 /* Search button styling */
-#btnsearch {
+#btnsearch,#landd {
     background-color: white;
-    font-size: 18px;
-    font-weight: bold;
     padding: 10px;
-    margin: 10px;
+    /* margin: 10px; */
     border-radius: 50%;
     border: 1px solid white;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -112,13 +103,6 @@ a:active {
     border-radius: 20px;
     border: 1px solid white;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 768px) {
-    #searchbar {
-        width: 90%;
-        font-size: 14px;
-    }
 }
 
 /* General div styling */
@@ -179,9 +163,9 @@ div {
     border-radius: 10px;
 }
 
-.card-container section{
+.card-container section {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -216,18 +200,4 @@ div {
     width: 100%;
     text-decoration: none;
     display: block;
-}
-
-@media (max-width: 768px) {
-    .card {
-        height: 100;
-        width: 100;
-        font-size: 12px;
-
-    }
-
-    .card img {
-        height: 40px;
-        width: 40px;
-    }
 }
