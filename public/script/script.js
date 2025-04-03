@@ -1,18 +1,18 @@
-// dropdown menu functionality
-const dropdown = document.querySelector('.dropdown');
-const button = document.querySelector('.dropdown-button');
-const menu = document.querySelector('.dropdown-menu');
+const mysql = require('mysql');
 
-// Toggle menu on button click
-button.addEventListener('click', (e) => {
-    e.stopPropagation();
-    menu.classList.toggle('show');
+const con = mysql.createConnection({
+    hostname: 'localhost',
+    username: 'root',
+    password: '1128',
+    db: 'sakila'
 });
 
-// Close menu when clicking outside
-document.addEventListener('click', (e) => {
-    if (!dropdown.contains(e.target)) {
-        menu.classList.remove('show');
+con.connect();
+
+con.createQuery(
+    {sql}, (err, rows, fields) => {
+        if (err) throw err
+        console.log(rows[0].name)
     }
-});
-
+);
+con.end();
