@@ -28,20 +28,15 @@ html {
 body {
     min-height: 100vh;
     width: 100vw;
-    background: linear-gradient(135deg, #e0f7fa 0%, #fffbe7 100%);
+    background: url(/img/Untitled2.jpeg);
     color: var(--color);
 
-}
-
-body.dark {
-    background: linear-gradient(135deg, #232526 0%, #414345 100%);
-    color: #fff;
 }
 
 header,
 footer {
     width: 100%;
-    background: rgb(205, 234, 255);
+    background: rgb(138, 193, 233);
     color: var(--color);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
@@ -78,7 +73,9 @@ div {
     display: inline-block;
     width: 50px;
     height: 28px;
-    position: relative;
+    position: absolute;
+    left: 16px;
+    top: 16px;
     vertical-align: middle;
 }
 
@@ -95,7 +92,7 @@ div {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: greenyellow;
     transition: .4s;
     border-radius: 34px;
 }
@@ -107,13 +104,13 @@ div {
     width: 22px;
     left: 3px;
     bottom: 3px;
-    background-color: #fff;
+    background-color:#fff;
     transition: .4s;
     border-radius: 50%;
 }
 
 input:checked+.slider {
-    background-color: #222;
+    background-color: greenyellow;
 }
 
 input:checked+.slider:before {
@@ -167,7 +164,7 @@ a:active {
 
 .dropdown-button {
     padding: 8px 16px;
-    background: transparent;
+    background: #fff;
     color: inherit;
     border: none;
     border-radius: 4px;
@@ -183,6 +180,7 @@ a:active {
 .dropdown-menu {
     display: none;
     position: absolute;
+    top: 16px;
     right: 0;
     background: #fff;
     min-width: 140px;
@@ -262,7 +260,7 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: ivory;
+    background: rgb(205, 234, 255);
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     height: 180px;
@@ -272,7 +270,7 @@ button {
 }
 
 .card:hover {
-    background: rgb(205, 234, 255);
+    background: #007BFF;
     cursor: pointer;
 }
 
@@ -321,7 +319,7 @@ button {
 }
 
 body.dark {
-    background-color: #121212;
+    background: url(/img/Untitled.jpeg);
     color: #fff;
 }
 
@@ -332,7 +330,7 @@ body.dark footer {
 }
 
 body.dark .card {
-    background: #333;
+    background: #444;
     color: #fff;
 }
 
@@ -350,7 +348,7 @@ body.dark .dropdown-menu a:hover {
 }
 
 body.dark .card:hover {
-    background: #444;
+    background: #333;
 }
 body.dark .card a {
     color: #fff;
@@ -371,5 +369,10 @@ body.dark input {
 }
 body.dark input::placeholder {
     color: #bbb;
+}
+
+body.dark button {
+    background-color: #fff;
+    color: #111;
 }
 
