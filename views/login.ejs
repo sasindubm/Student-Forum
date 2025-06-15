@@ -1,7 +1,7 @@
 <%- include ('components/header') %>
 
     <main>
-        <div>
+        <div class="panel">
             <h1>Login</h1>
             <form action="/login" method="POST">
                 <div>
@@ -12,7 +12,9 @@
                     <label for="password">Password:</label>
                     <input type="password" id="password" name="password" required>
                 </div>
-                <button type="submit" name="submit">Login</button>
+                <div>
+                    <button type="submit" name="submit">Login</button>
+                </div>
             </form>
             <div>
                 <p>Don't have an account? <a href="/register">Register here</a></p>
@@ -22,7 +24,15 @@
     </main>
     <style>
         footer {
+            bottom: 0;
             position: absolute;
+        }
+
+        @media (max-width:600px) {
+            footer {
+                bottom: 0;
+                position: relative;
+            }
         }
     </style>
 

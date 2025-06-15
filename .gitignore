@@ -1,29 +1,14 @@
-Node modules
+#Node modules
 node_modules/
 
-Environment files
+#Environment files
 .env
-.env.local
-.env.development
-.env.test
-.env.production
-.env.example
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local.example
-.env.example.local
-.env.development.example
-.env.test.example
-.env.production.example
-.env.development.example.local
-.env.test.example.local
 
-Logs
+#Logs
 logs/
 *.log
 
-OS-specific
+#OS-specific
 .DS_Store
 Thumbs.db
 

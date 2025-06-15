@@ -53,6 +53,7 @@ footer {
 
 main {
     width: 100%;
+    height: 100%;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -69,13 +70,21 @@ div {
     justify-content: center;
 }
 
+.panel {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
 .theme-switch {
     display: inline-block;
     width: 50px;
     height: 28px;
     position: absolute;
-    left: 16px;
-    top: 16px;
+    left: 32px;
+    top: 32px;
     vertical-align: middle;
 }
 
@@ -92,7 +101,7 @@ div {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: greenyellow;
+    background-color: rgb(109, 109, 109);
     transition: .4s;
     border-radius: 34px;
 }
@@ -104,13 +113,13 @@ div {
     width: 22px;
     left: 3px;
     bottom: 3px;
-    background-color:#fff;
+    background-color: #fff;
     transition: .4s;
     border-radius: 50%;
 }
 
 input:checked+.slider {
-    background-color: greenyellow;
+    background-color: rgb(109, 109, 109);
 }
 
 input:checked+.slider:before {
@@ -316,6 +325,11 @@ button {
     button {
         max-width: 100%;
     }
+
+    footer {
+    bottom: 0;
+    position: relative;
+}
 }
 
 body.dark {
@@ -350,23 +364,29 @@ body.dark .dropdown-menu a:hover {
 body.dark .card:hover {
     background: #333;
 }
+
 body.dark .card a {
     color: #fff;
 }
+
 body.dark a {
     color: #bb86fc;
 }
+
 body.dark a:hover {
     color: #3700b3;
 }
+
 body.dark a:visited {
     color: #bb86fc;
 }
+
 body.dark input {
     background: #333;
     color: #fff;
     border: 1px solid #555;
 }
+
 body.dark input::placeholder {
     color: #bbb;
 }
@@ -376,3 +396,7 @@ body.dark button {
     color: #111;
 }
 
+body.dark .panel{
+    background-color: #555;
+    color: #fff;
+}

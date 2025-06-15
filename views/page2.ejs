@@ -1,5 +1,33 @@
 <%- include('components/header') %>
 
+    <h1>Introduction to Database Management Systems</h1>
+    <p>A database management system (DBMS) is a software system that allows you to define, create, maintain, and
+        manipulate databases.</p>
+    <ul>
+        <li>What is a database?</li>
+        <li>Types of databases</li>
+        <li>DBMS architecture</li>
+    </ul>
 
+    <h1>DBMS Fundamentals</h1>
+    <p>DBMS fundamentals include data models, schema, and instances.</p>
+    <ul>
+        <li>Data models: relational, hierarchical, network</li>
+        <li>Schema: database structure</li>
+        <li>Instances: specific data stored in the database</li>
+    </ul>
+    <style>
+        footer {
+            bottom: 0;
+            position: absolute;
+        }
 
-<%- include('components/footer') %>
+        @media (max-width:600px) {
+            footer {
+                bottom: 0;
+                position: relative;
+            }
+        }
+    </style>
+
+    <%- include('components/footer') %>
