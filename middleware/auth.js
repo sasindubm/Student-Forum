@@ -6,10 +6,9 @@ exports.log = (req, res, next) => {
     db.query(sql, [email, password], (err, results) => {
         if (err) throw err;
         if (results.length > 0) {
-            next();
+            res.redirect('/success');
         } else {
-            res.redirect('/login')
-            window.alert('Login Failed');
+            res.redirect('/login');
         }
     })
 };

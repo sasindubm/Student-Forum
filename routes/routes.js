@@ -9,7 +9,9 @@ router.get('/register', userController.getRegister);
 
 router.post('/register', auth.register);
 
-router.post('/login', auth.log, userController.getHome);
+router.post('/login', auth.log);
+
+router.get('/success', userController.getHome);
 
 router.get('/pastpaper', userController.getPastpaper);
 

@@ -21,19 +21,3 @@ a {
 a:hover {
     color: #ff0000;
 }
-
-/* Dark mode styles */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #181818;
-        color: #f0f0f0;
-    }
-
-    a {
-        color: #66aaff;
-    }
-
-    a:hover {
-        color: #ff6666;
-    }
-}
