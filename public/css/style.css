@@ -76,6 +76,7 @@ div {
     border-radius: 10px;
     background-color: aliceblue;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    color: #111;
 }
 
 .theme-switch {
@@ -299,6 +300,10 @@ button {
 
 @media (max-width: 600px) {
 
+    .card{
+        color: #111;
+    }
+
     header,
     footer,
     form {
@@ -327,9 +332,13 @@ button {
     }
 
     footer {
-    bottom: 0;
-    position: relative;
-}
+        bottom: 0;
+        position: relative;
+    }
+
+    main {
+        color: #111;
+    }
 }
 
 body.dark {
@@ -396,7 +405,11 @@ body.dark button {
     color: #111;
 }
 
-body.dark .panel{
+body.dark .panel {
     background-color: #555;
+    color: #fff;
+}
+
+body.dark main {
     color: #fff;
 }
