@@ -1,14 +1,7 @@
-#Node modules
 node_modules/
-
-#Environment files
 .env
-
-#Logs
 logs/
 *.log
-
-#OS-specific
 .DS_Store
 Thumbs.db
 

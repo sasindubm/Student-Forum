@@ -30,6 +30,7 @@ body {
     width: 100vw;
     background: url(/img/Untitled2.jpeg);
     color: var(--color);
+    transition: var(--background-color) 0.5s ease-in-out;
 
 }
 
@@ -270,17 +271,17 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgb(205, 234, 255);
+    background-color: rgb(205, 234, 255);
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     height: 180px;
     min-width: 0;
     text-align: center;
-    transition: background 0.2s;
+    transition: background-color 0.5s ease-in-out;
 }
 
 .card:hover {
-    background: #007BFF;
+    background-color: #007BFF;
     cursor: pointer;
 }
 
@@ -353,8 +354,9 @@ body.dark footer {
 }
 
 body.dark .card {
-    background: #444;
+    background-color: #444;
     color: #fff;
+    transition: background-color 0.5s ease-in-out;
 }
 
 body.dark .dropdown-menu {
@@ -367,11 +369,11 @@ body.dark .dropdown-menu a {
 }
 
 body.dark .dropdown-menu a:hover {
-    background: #333;
+    background-color: #333;
 }
 
 body.dark .card:hover {
-    background: #333;
+    background-color: #333;
 }
 
 body.dark .card a {
